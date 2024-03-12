@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="/static/css/styles.css">
+  <link href="https://fonts.cdnfonts.com/css/ocr-a-extended" rel="stylesheet">
+  <script src="/static/js/main.js"></script>
+</head>
+<body>
+
+  <header>
+    <div class="header-content">
+      <div class="buttons-container">
+      <button class="all-button" onclick="displayAll()">All maps</button>
+    </div>
+	<h1 class="logo"><a href="/">Logged in as {{ user.name }} {{ user.surname }}</a></h1>
+
+      <div class="buttons-container">
+        <a href="/"><button class="profile-button">Today</button></a>
+        <a href="/timetable"><button class="profile-button">Profile</button></a>
+        <a href="/logout"><button class="logout-button"><span></span>Logout</button></a>
+      </div>
+    </div>
+  </header>
+
+  <div class="content">
+    <h1>Chosen class:</h1>
+    <div class="container">
+    	<div class="map-image" id="map-image">
+    	</div>
+      
+    	<div class="container">
+        <div class="legend">
+            <img src="{{ backend }}/img/Legend.png" alt="Legend" id="img">
+        </div>
+    		<div class="sidebar">
+      			<div class="schedule-text">Schedule Today</div>
+      				{% for schedule, location, subject in subjects_today %}
+				<button class="subject-list" onclick="displayImage('{{ backend }}/{{ location.file }}', {{ location.pos.x }}, {{ location.pos.y }})">{{ subject.name }}<br>{{ schedule.start }}-				{{ schedule.end }}</button>
+      				{% endfor %}
+          </div>
+  		</div>
+    	</div>
+      <p id="description"></p>
+  </div>
+
+
+
+
+</body>
+</html>

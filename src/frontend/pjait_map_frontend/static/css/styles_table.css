@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'OCR A Extended', sans-serif;
+}
+
+header {
+  background-color: red;
+  padding: 10px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.logo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  text-decoration: none;
+}
+
+.profile-button,
+.logout-button {
+  font-family: 'OCR A Extended', sans-serif;
+  background-color: red;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.logout-button {
+  margin-left: 10px;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+}
+
+.buttons-container button {
+  margin-left: 10px;
+}
+
+main {
+  padding: 20px;
+}
+
+.table-row {
+  display: flex;
+}
+
+.day-container {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+}
+
+.day-title {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 0;
+}
+
+.activity-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.activity-name {
+  flex: 1;
+}
+
+.action-buttons {
+  display: flex;
+}
+
+.action-button {
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  border: none;
+  cursor: pointer;
+  margin-right: 5px;
+}
+
+.action-button span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.add-button {
+  background-color: red;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: auto;
+  display: block;
+}
+.popup {
+	display: none;
+  position: absolute;
+  top: 50%;
+	left: 50%; 	transform: translate(-50%, -50%);
+	width: 300px;
+	background-color: #f2f2f2;
+	padding: 20px;
+	border-radius: 5px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+	display: none;
+}
+.form-group {
+  width: 90%;
+  margin-bottom: 15px;
+}

@@ -1,0 +1,152 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'OCR A Extended', sans-serif;
+}
+
+header {
+  background-color: red;
+  padding: 10px;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  color: white;
+  font-weight: bold;
+  font-size: 24px;
+  margin: 0;
+  margin-left: auto;
+  margin-right:auto;
+}
+.logo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.logo a:hover {
+  text-decoration: none;
+}
+.schedule-text {
+  background-color: red;
+  color: white;
+  padding: 8px 16px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  margin-right: auto;
+  margin-left: 10px;
+}
+
+.profile-button,
+.logout-button,
+.all-button {
+  font-family: 'OCR A Extended', sans-serif;
+  background-color: red;
+  color: white;
+  padding: 8px 16px;
+  border-radius: 10px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+.logout-button {
+  margin-left: 10px;
+}
+
+.all-button{
+  float: left;
+  margin-right: 10px;
+}
+
+.buttons-container {
+  display: flex;
+  align-items: center;
+}
+
+.buttons-container button {
+  margin-left: 10px;
+}
+
+.legend{
+  margin-right: 10px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0;
+}
+
+.sidebar {
+  background-color: #eee;
+  width: 200px;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.subject-list {
+  background-color: red;
+  color: white;
+  padding: 8px 44px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  font-family: 'OCR A Extended', sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+}
+
+
+.content {
+  flex-grow: 1;
+  margin-left: 120px;
+}
+
+h1 {
+  color: red;
+}
+
+p {
+  color: black;
+}
+.pin {
+  position: absolute;
+  background: red;
+	border-radius: 50%;
+	margin: 10px;
+	height: 20px;
+	width: 20px;
+
+	box-shadow: 0 0 0 0 rgba(255, 0, 0, 1);
+	transform: scale(1);
+	animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+	0% {
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.7);
+	}
+
+	70% {
+		transform: scale(1);
+		box-shadow: 0 0 0 10px rgba(255, 0, 0, 0);
+	}
+
+	100% {
+		transform: scale(0.9);
+		box-shadow: 0 0 0 0 rgba(255, 0, 0, 0.9);
+	}
+}
