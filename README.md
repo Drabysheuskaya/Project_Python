@@ -1,14 +1,8 @@
-# PythonProject-s24900-s25706
+
 ## Interactive Map of PJATK
 
 ### The aim of the project is to create an interactive map of pjatk that would help first year students to navigate the area of the academy.
 
-Authors:  
-- s25706 - Lev Koliadich (backend/coding guru)
-- s24900 - Leonid Kim (frontend/rookie)
-
-Valuable feedback provider/tutor/el numero uno/The Boss:
-- Illia Shkroba
 
 Functionalities to be implemented (so far):
 1. Opening and viewing maps of every floor in Bulding A and Building B;
